@@ -19,9 +19,25 @@ body{
 
 }
 /* for the global navigation 1/2 */
-#globalnav{
+#globalnav {
+    position: relative;
     height: min-content;
-}
+    width: 100%;
+  }
+  
+#globalnav::before {
+    content: "";
+    background-image: url("/images/WWNav.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 #navtop{
     border: 2.5px solid black ;
     border-radius: 100px;
@@ -33,6 +49,8 @@ body{
     align-self: center;
     align-items: center;
     justify-content: space-evenly;
+    justify-self: center;
+    
     
 
 }
