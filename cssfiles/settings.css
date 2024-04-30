@@ -9,6 +9,9 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    
+    align-items: center;
+    
     width: 100vw;
     height: 100vh;
     margin: 50px 0 50px 0;
@@ -101,7 +104,7 @@ body {
 }
 
 #divider {
-    margin: 10;
+    margin: 0;
     border: 2.5px solid black ;
     border-radius: 100px;
     position: relative;
@@ -112,34 +115,113 @@ body {
 }
 
 /* for the main content of webpage */
-#main{
-    text-align: center;
-    margin-left: 50px;
+#about {
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    padding: 20px;
 }
+
+#main {
+    width: 60%;
+    float: left;
+}
+
+#api {
+    width: 30%;
+    float: right;
+}
+
+
+
+
+
+/* for the main content of webpage */
+#setting {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    width: 50%;
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+#lightDark {
+    text-align: center;
+}
+
 .dark-mode {
     background-color: rgb(120, 119, 119);
     color: white;
     
 }
-button{
- 
- 
-  border: 2px solid black;
+
+#fontButtons {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#fontButtons>* {
+  border: 2px solid rgb(0, 0, 0);
   background-color: #ababab;
   font-size: 20px;
-
-
+  text-align: center;
 }
-.small{
-    width: 30px;
-    height: 30px;
-}
-
-.medium{
+#fontSizeButtonS {
     width:40px;
-    height:40px
+    height:40px;
+    font-size: 15px;
 }
-.large{
-    width:50px;
-    height:50px
+
+#fontSizeButtonM {
+    width:40px;
+    height:40px;
+    font-size: 20px;
+}
+#fontSizeButtonL {
+    width:40px;
+    height:40px;
+    font-size: 25px;
+    
+}
+
+#ttsBox {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#ttsLabel {
+    text-align: center;
+}
+
+#tts {
+    font-size: 10px;
+    text-align: center;
 }
