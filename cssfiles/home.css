@@ -27,7 +27,7 @@ body{
   
 #globalnav::before {
     content: "";
-    background-image: url("/images/WWNav.png");
+    background-image: url("images\icons8-search.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
