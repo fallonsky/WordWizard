@@ -19,14 +19,31 @@ body{
 
 }
 /* for the global navigation 1/2 */
-#globalnav{
-    height: min-content;
+#WWLogo{
+   height: 40px;
+   align-self: center;
+   justify-self: center;
 }
+#WWLogo:hover{
+    color: gray;
+}
+#globalnav {
+    position: relative;
+    height: min-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+
+
 #navtop{
+    
     border: 2.5px solid black ;
     border-radius: 100px;
     width: 80vw;
-    height: 40px;
+    height: 50px;
 
     display: flex;
     flex-direction: row;
@@ -34,12 +51,14 @@ body{
     align-items: center;
     justify-content: space-evenly;
     
+    
 
 }
 
 #navtop a{
         text-decoration: none;
         color: black;
+        
 }
 
 #navtop a:hover{
@@ -49,7 +68,8 @@ body{
 /* for the global navigation 2/2 */
 
 #navsearch{
-    margin: 10px 0 10px 0; 
+    margin: 10px 0 10px 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-self: center;
@@ -115,6 +135,7 @@ body{
     
     
 }
+/* ---------------------------------------------------------------------- */
 
 /* for the main content of webpage */
 

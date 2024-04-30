@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../cssfiles/browse.css">    
-
+    <script src="\javascriptfiles\search.js" defer></script>
 </head>
 <body>
 
@@ -20,19 +20,18 @@
         
         <a href="browse.html">Browse</a>
         <a href="games.html">Games</a>
-        <a href="home.html" id="WWLogo"></a>
+        <a href="home.html" ><img id="WWLogo"src="\images\WWlogo.png" alt="WW"></a>
         <a href="about.html">About</a>
         <a href="settings.html">Settings</a>
-    
     </nav>
 
     <div id="navsearch">
-    <h2 id="pagetitle">Browse</h3>
+    <h2 id="pagetitle">Home</h3>
 
             <!-- Search bar-->
-    <form action="GET" onsubmit="">
+    <form name="searchForm" action="GET" onsubmit="searchWord(); return false;">
         <div id="barcontainer">
-        <img src="../images/icons8-search.svg" alt="icon" id="searchicon">
+        <img src="\images\icons8-search.svg" alt="icon" id="searchicon">
         <input type="text" name="searchbar" id="searchbar">
         </div>
     </form>
@@ -46,11 +45,12 @@
 
 
 
-    <!--Word of the Day-->
+
+    <!--Searched Word-->
 <div id="wordwidget">
     <div id="wordbox">
         <div id="header">
-        <h1 id="wordoftheday">Stifled</h1>
+        <h1 id="wordTitle">Stifled</h1>
         <!--Note: parts of speech VS part of speech-->
         <p id="partsofspeech">(Adj., Verb)</p>
         </div>

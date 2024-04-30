@@ -19,10 +19,13 @@ body{
 
 }
 /* for the global navigation 1/2 */
-#WWLogo img{
+#WWLogo{
    height: 40px;
    align-self: center;
    justify-self: center;
+}
+#WWLogo:hover{
+    color: gray;
 }
 #globalnav {
     position: relative;
