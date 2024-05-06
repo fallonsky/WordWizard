@@ -13,8 +13,8 @@ body{
     
     
     
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     margin: 50px 0 50px 0;
 
 }
@@ -33,6 +33,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 
   }
   
@@ -43,7 +44,7 @@ body{
     border: 2.5px solid black ;
     border-radius: 100px;
     width: 80vw;
-    height: 50px;
+    height: 55px;
 
     display: flex;
     flex-direction: row;
@@ -93,7 +94,7 @@ body{
 }
 
 #randomword{
-    border: 2.5px solid black ;
+    border: 2px solid black ;
     border-radius: 100px;
     width: 150px;
     height: 30px;
@@ -127,11 +128,12 @@ body{
 }
 #divider{
     margin: 0;
-    border: 2.5px solid black ;
+    border: 2px solid black ;
     border-radius: 100px;
     position: relative;
     top: -10px;
     width: 100vw;
+    margin-bottom: 10px;
     
     
 }
@@ -142,6 +144,9 @@ body{
 #content{
     width: 100%;
     height: 100%;
+    min-height: max-content;
+    max-height: max-content;
+    overflow: inherit;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -154,13 +159,24 @@ body{
 }
 
 /* for the word of the day */
-#wordwidget{
+#wordbox{
+    height: fit-content;
+}
+#wordwidget, #gamewidget{
     margin: 10px;
     padding: 30px;
     border: 2.5px solid black ;
     border-radius: 25px;
-    height: 80%;
     
+    min-height: max-content;
+    max-height: min-content;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+
 
 }
 #header{
@@ -175,16 +191,4 @@ body{
 
 
 
-
-
-
-
-#gamewidget{
-    margin: 10px;
-    padding: 30px;
-    border: 2.5px solid black ;
-    border-radius: 25px;
-    height: 80%;
-    width: 40%;
-}
 
